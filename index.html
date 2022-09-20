@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Khumaar - Papon | Image slider</title>
+
+    <!-- Stylesheet link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Script link -->
+    <script src="script.js" defer></script>
+</head> 
+<body>
+    <div class="container">
+        <!-- arrows for left and right alignment -->
+        <div class="next-arrow" onclick="plusSlides(1)">
+            <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24"><path d="M19,3H5A2,2 0 0,0 3,5V19C3,20.11 3.9,21 5,21H19C20.11,21 21,20.11 21,19V5A2,2 0 0,0 19,3M9.71,18L8.29,16.59L12.88,12L8.29,7.41L9.71,6L15.71,12L9.71,18Z" /></svg>
+        </div>
+
+        <div class="prev-arrow" onclick="plusSlides(-1)">
+            <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24"><path d="M19,3H5A2,2 0 0,0 3,5V19C3,20.11 3.9,21 5,21H19C20.11,21 21,20.11 21,19V5A2,2 0 0,0 19,3M15.71,16.59L14.29,18L8.29,12L14.29,6L15.71,7.41L11.12,12L15.71,16.59Z" /></svg>
+        </div>
+        <!-- container for image and text-->
+        <div class="image-container">
+            <!-- this div contains arrows, texts and main image-->
+            <div class="image-bg">
+                <img src="images/one.jpg" alt="one">
+                <p class="hindi">सलवटों पे लिखी</p>
+                <p class="english">SALVATON PE LIKHI</p>
+            </div>
+            <div class="image-bg">
+                <img src="images/two.jpg" alt="two">
+                <p class="hindi">करवटे एक हज़ार</p>
+                <p class="english">KARVATIEN EK HAZAAR</p>
+            </div>
+            <div class="image-bg">
+                <img src="images/three.jpg" alt="three">
+                <p class="hindi">धीमी आँच पे जैसे</p>
+                <p class="english">DHEEMI AANCH PE JAISE</p>
+            </div>
+            <div class="image-bg">
+                <img src="images/four.jpg" alt="four">
+                <p class="hindi">घुलता रहे मल्हार</p>
+                <p class="english">Ghulta rahe malhaar</p>
+            </div>
+            <div class="image-bg">
+                <img src="images/five.jpg" alt="five">
+                <p class="hindi">मूंदी आँखों में महका सा</p>
+                <p class="english">Moondi aankhon mein mehka sa</p>
+            </div>
+            <div class="image-bg">
+                <img src="images/six.jpg" alt="six">
+                <p class="hindi">बीती रात का यह खुमार</p>
+                <p class="english"> Beeti raat ka yeh khumaar</p>
+            </div>
+        </div>
+
+        <!-- mini image showcase for jumping to respective image -->
+        <div class="image-showcase">
+            <div class="showcase active" onclick="currentSlide(1)">
+                <img src="images/one.jpg" alt="one">
+            </div>
+            <div class="showcase" onclick="currentSlide(2)">
+                <img src="images/two.jpg" alt="two">
+            </div>
+            <div class="showcase" onclick="currentSlide(3)">
+                <img src="images/three.jpg" alt="three">
+            </div>
+            <div class="showcase" onclick="currentSlide(4)">
+                <img src="images/four.jpg" alt="four">
+            </div>
+            <div class="showcase" onclick="currentSlide(5)">
+                <img src="images/five.jpg" alt="five">
+            </div>
+            <div class="showcase" onclick="currentSlide(6)">
+                <img src="images/six.jpg" alt="six">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

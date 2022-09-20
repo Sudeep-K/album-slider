@@ -1,0 +1,110 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Martel&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+
+    display: grid;
+    grid-template-rows: 4fr 1fr;
+    grid-template-columns: 1fr;
+
+    align-items: end;
+    justify-items: center;
+
+    background-color:#FCF9AF;
+}
+
+.image-bg {
+    display: none;
+}
+
+.image-bg.active {
+    display: block;
+}
+
+.image-bg>img{
+    width: 640px;
+    height: 420px;
+    border: 10px solid white;
+}
+
+.image-bg > .hindi {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    font-size: 2rem; 
+    color: white;
+    font-family: 'Martel';
+    text-shadow: 3px 3px #000000;
+}
+
+.image-bg > .english {
+    position: absolute;
+    top: 48%;
+    left: 41%;
+    font-size: 1rem;
+    color: white;
+    font-family: 'Lora';
+    text-shadow: 2px 2px #000000;
+}
+
+/* for image showcase */
+.image-showcase {
+    display: flex;
+}
+
+.showcase > img {
+    height: 115px;
+    border: 5px solid white;
+    cursor: pointer;
+}
+
+.showcase:hover > img {
+    height: 115px;
+    border: 5px solid lightcoral;
+    cursor: pointer;
+}
+.showcase.active > img {
+    border: 5px solid lightcoral;
+}
+
+/* arrows */
+.next-arrow > *, .prev-arrow>* {
+    fill: white;
+    opacity: 50%;
+    cursor: pointer;
+}
+
+.next-arrow:hover> * , .prev-arrow:hover>* {
+    opacity: 100%;
+}
+
+.next-arrow> * {
+    position: absolute;
+    top: 42%;
+    left: 73%;
+    width: 40px;
+    height: 40px;
+}
+
+.prev-arrow> * {
+    position: absolute;
+    top: 42%;
+    left: 23.5%;
+    width: 40px;
+    height: 40px;
+}
